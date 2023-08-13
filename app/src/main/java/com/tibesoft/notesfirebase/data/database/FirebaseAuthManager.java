@@ -30,6 +30,10 @@ public class FirebaseAuthManager {
                 });
     }
 
+    public FirebaseUser getCurrentUser() {
+        return mAuth.getCurrentUser();
+    }
+
     public void signOut() {
         mAuth.signOut();
     }

@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppTheme"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:name="com.tibesoft.notesfirebase.MyApplication">
         <activity
             android:name="com.tibesoft.notesfirebase.ui.MainActivity"
             android:exported="true">

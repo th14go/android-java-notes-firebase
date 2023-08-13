@@ -12,6 +12,16 @@ public class SignViewModel extends ViewModel {
     private FirebaseAuthManager authManager = new FirebaseAuthManager();
     private MutableLiveData<FirebaseUser> userLiveData = new MutableLiveData<>();
     private MutableLiveData<Exception> errorLiveData = new MutableLiveData<>();
+    private MutableLiveData<Boolean> isAuthenticatedLiveData = new MutableLiveData<>();
+
+    public LiveData<Boolean> getIsAuthenticatedLiveData() {
+        return isAuthenticatedLiveData;
+    }
+
+    public void checkAuthenticationStatus() {
+        FirebaseUser currentUser = authManager.getCurrentUser();
+        isAuthenticatedLiveData.postValue(currentUser != null);
+    }
 
     public LiveData<FirebaseUser> getUserLiveData() {
         return userLiveData;
