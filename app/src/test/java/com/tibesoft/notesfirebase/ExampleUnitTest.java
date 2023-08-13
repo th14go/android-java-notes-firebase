@@ -1,4 +1,4 @@
-package com.tibesoft.notesfirebase;
+package com.tibe.t3;
 
 import org.junit.Test;
 

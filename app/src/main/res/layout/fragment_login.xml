@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="100dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button_bar_gray"
+            android:elevation="0dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/register"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_button_bar_white"
+            android:elevation="0dp"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/layout_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_edit"
+            android:layout_marginHorizontal="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Senha"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:drawableEnd="@drawable/sl_toggle"
+            android:background="@drawable/bg_edit"
+            android:layout_marginHorizontal="50dp"
+            android:drawablePadding="20dp"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enter_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Entrar"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="20dp"/>
+
+        <ProgressBar
+            android:id="@+id/progress_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_register"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/gray"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layout_toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/email_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="E-mail"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_edit"
+            android:layout_marginHorizontal="50dp"
+            android:paddingHorizontal="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Senha"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray"
+            android:drawableEnd="@drawable/sl_toggle"
+            android:background="@drawable/bg_edit"
+            android:layout_marginHorizontal="50dp"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:drawablePadding="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/enter_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Registrar"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="50dp"
+            android:background="@drawable/bg_button"
+            android:layout_marginTop="20dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_register"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"
+            />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/error_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

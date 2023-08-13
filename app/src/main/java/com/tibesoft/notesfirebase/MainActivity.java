@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.tibesoft.notesfirebase.databinding.ActivityMainBinding;
+import com.tibsoft.notesfirebase.R;
+import com.tibsoft.notesfirebase.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,5 +15,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        getSupportFragmentManager().beginTransaction().replace(
+                R.id.frame_layout, new LoginFragment(), "login"
+        ).commit();
     }
 }

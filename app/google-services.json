@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "932982178695",
+    "firebase_url": "https://note-f20e8-default-rtdb.firebaseio.com",
+    "project_id": "note-f20e8",
+    "storage_bucket": "note-f20e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932982178695:android:86ddffd2432d107c218922",
+        "android_client_info": {
+          "package_name": "com.tibe.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932982178695-ti3er479qc3kmfjlsk57mr459nr43ccb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tibe.note",
+            "certificate_hash": "c12e116e0f7eacd1b84c119c5853948779c8cc09"
+          }
+        },
+        {
+          "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4grtD-g8PCPPDwalZyBvSrjhIC0q8fNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932982178695:android:49654843cdf512ef218922",
+        "android_client_info": {
+          "package_name": "com.tibesoft.notefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932982178695-upf3v694ocj9630pd5jfg0hqng6l2hbc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tibesoft.notefirebase",
+            "certificate_hash": "07ca8f80d72aa74b46eafacceef8eea4e41c3c78"
+          }
+        },
+        {
+          "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4grtD-g8PCPPDwalZyBvSrjhIC0q8fNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932982178695:android:0f8e5eb25aeefbc7218922",
+        "android_client_info": {
+          "package_name": "com.tibesoft.notesfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4grtD-g8PCPPDwalZyBvSrjhIC0q8fNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932982178695-e10t45qlr9i73pj5fk8n5beqgb3jv6uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
