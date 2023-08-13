@@ -1,4 +1,4 @@
-package com.tibesoft.notesfirebase;
+package com.tibesoft.notesfirebase.ui;
 
 import android.graphics.drawable.Drawable;
 import android.text.method.PasswordTransformationMethod;

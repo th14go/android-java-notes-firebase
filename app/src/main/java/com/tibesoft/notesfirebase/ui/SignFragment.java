@@ -1,4 +1,4 @@
-package com.tibesoft.notesfirebase;
+package com.tibesoft.notesfirebase.ui;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -11,24 +11,43 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 
+import com.tibesoft.notesfirebase.viewmodel.SignViewModel;
 import com.tibsoft.notesfirebase.R;
-import com.tibsoft.notesfirebase.databinding.FragmentLoginBinding;
+import com.tibsoft.notesfirebase.databinding.FragmentSignBinding;
 
 
-public class LoginFragment extends Fragment {
+public class SignFragment extends Fragment {
 
-    private FragmentLoginBinding binding;
+    private FragmentSignBinding binding;
+    private SignViewModel signViewModel;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        binding = FragmentLoginBinding.inflate(inflater, container, false);
+        binding = FragmentSignBinding.inflate(inflater, container, false);
+
+        signViewModel = new ViewModelProvider(requireActivity()).get(SignViewModel.class);
+        signViewModel.getUserLiveData().observe(requireActivity(), user -> {
+
+        });
+        signViewModel.getErrorLiveData().observe(requireActivity(), exception -> {
+
+        });
+
 
         setToggleTouch();
         setToolbarTouch();
+        clicks();
 
         return binding.getRoot();
+    }
+
+    private void clicks() {
+        binding.login.setOnClickListener(v -> {
+
+        });
     }
 
     @SuppressLint("ClickableViewAccessibility")

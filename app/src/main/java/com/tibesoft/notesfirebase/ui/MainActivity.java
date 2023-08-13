@@ -1,4 +1,4 @@
-package com.tibesoft.notesfirebase;
+package com.tibesoft.notesfirebase.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         getSupportFragmentManager().beginTransaction().replace(
-                R.id.frame_layout, new LoginFragment(), "login"
+                R.id.frame_layout, new SignFragment(), "login"
         ).commit();
     }
 }
