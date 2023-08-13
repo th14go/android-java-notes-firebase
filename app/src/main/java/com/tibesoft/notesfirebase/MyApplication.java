@@ -5,17 +5,16 @@ import android.content.Context;
 
 import androidx.lifecycle.ViewModelProvider;
 
-import com.tibesoft.notesfirebase.viewmodel.AuthStatusViewModel;
-import com.tibesoft.notesfirebase.viewmodel.SignViewModel;
+import com.tibesoft.notesfirebase.viewmodel.AuthViewModel;
 
 public class MyApplication extends Application {
-    private AuthStatusViewModel authStatusViewModel;
+    private AuthViewModel authStatusViewModel;
     private static Context context;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        authStatusViewModel = new ViewModelProvider.AndroidViewModelFactory(this).create(AuthStatusViewModel.class);
+        authStatusViewModel = new ViewModelProvider.AndroidViewModelFactory(this).create(AuthViewModel.class);
         context = getApplicationContext();
         authStatusViewModel.checkAuthenticationStatus();
     }
@@ -24,7 +23,7 @@ public class MyApplication extends Application {
         return context;
     }
 
-    public AuthStatusViewModel getAuthStatusViewModel() {
+    public AuthViewModel getAuthStatusViewModel() {
         return authStatusViewModel;
     }
 }

@@ -1,4 +1,4 @@
-package com.tibesoft.notesfirebase.data.database;
+package com.tibesoft.notesfirebase.data.auth;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;

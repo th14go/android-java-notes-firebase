@@ -5,23 +5,13 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
 import com.google.firebase.auth.FirebaseUser;
-import com.tibesoft.notesfirebase.data.database.FirebaseAuthManager;
+import com.tibesoft.notesfirebase.data.auth.FirebaseAuthManager;
 
 public class SignViewModel extends ViewModel {
 
     private FirebaseAuthManager authManager = new FirebaseAuthManager();
     private MutableLiveData<FirebaseUser> userLiveData = new MutableLiveData<>();
     private MutableLiveData<Exception> errorLiveData = new MutableLiveData<>();
-    private MutableLiveData<Boolean> isAuthenticatedLiveData = new MutableLiveData<>();
-
-    public LiveData<Boolean> getIsAuthenticatedLiveData() {
-        return isAuthenticatedLiveData;
-    }
-
-    public void checkAuthenticationStatus() {
-        FirebaseUser currentUser = authManager.getCurrentUser();
-        isAuthenticatedLiveData.postValue(currentUser != null);
-    }
 
     public LiveData<FirebaseUser> getUserLiveData() {
         return userLiveData;

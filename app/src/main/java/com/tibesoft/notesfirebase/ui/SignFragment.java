@@ -19,8 +19,6 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.tibesoft.notesfirebase.MyApplication;
-import com.tibesoft.notesfirebase.viewmodel.AuthStatusViewModel;
 import com.tibesoft.notesfirebase.viewmodel.SignViewModel;
 import com.tibsoft.notesfirebase.R;
 import com.tibsoft.notesfirebase.databinding.FragmentSignBinding;
